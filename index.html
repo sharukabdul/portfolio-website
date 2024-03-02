@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website | Sharuk Abdul</title>
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1458793771/a46xxdjcjwdjlu7h2mpv.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea2d9a64f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="scroll-up-btn" onclick="topFunction()" id="myBtn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <div id="header">
+        <div class="nav-container container">
+
+            <!-- Nav section start -->
+            <nav>
+                <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+        <!-- Home section start -->
+        <div class="home">
+            <div class="container">
+                <div class="home-content">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2">Sharuk Abdul</div>
+                    <div class="text-3">And I'm a <span class="auto-type"></span></div>
+                    <a href="images/ShaikAbdulSharuk-Resume.pdf" download class="download-btn">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sharukabdul.jpg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a motivated and dedicated Software Engineer with a background in Electrical and Electronics Engineering (EEE). Despite my core background, I have always been passionate about web development and mobile app development.
+                        My journey from a core engineering background to software development reflects my strong passion for technology and my ability to adapt to new challenges and learning opportunities. I am constantly exploring emerging technologies and frameworks to enhance my skills and stay updated with industry trends.
+                    </p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web App development</li>
+                            <li><span>App development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Present</span><br>Working as a Software Engineer</li>
+                            <li><span>2019-2021</span><br>Worked in Wipro Limited</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2013 - 2017</span><br>Sana Engineering College (EEE)</li>
+                            <li><span>2011 - 2013</span><br>Suguna Juniour College (MPC)</li>
+                            <li><span>2010 - 2011</span><br>Teja Talent School (SSC)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section start -->
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">My Services</div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Web design is a multi-disciplinary job, where we'd need
+                        not only knowledge in design (typography, color theory)
+                        but also skills in developing a website (HTML, CSS, JavaScript).
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Web developers build and maintain websites and web applications,
+                        using programming, design tools, and languages such as
+                        HTML, CSS, Python and JavaScript to meet both client and
+                        end-user needs.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>
+                        An application developer's typical responsibilities include
+                        coding, designing, application management, troubleshooting,
+                        monitoring updates and possible security threats, and providing
+                        end user support.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section start -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h2>Social Media App</h3>
+                        <p>
+                            Social media apps and websites are platforms that give users
+                            the chance to create, share, and engage with content and/or 
+                            take part in social networking.
+                        </p>
+                        <h4>Download from playstore.</h4>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h2>Music App</h3>
+                        <p>
+                            A quality music streaming app will always help users with
+                            decent tools for organizing the music tracks and albums by
+                            genre, artists, language, category, rating, popularity, etc.
+                        </p>
+                        <h4>Download from playstore.</h4>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Online Shopping App</h3>
+                        <p>
+                            Online shopping is a form of electronic commerce which
+                            allows consumers to directly buy goods or services from
+                            a seller over the Internet using a web browser or a mobile app.
+                        </p>
+                        <h4>Download from playstore.</h4>
+                        <a href="https://sharuk-abdul.github.io/e-commerce/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact section start -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sharukabdul786@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8187868177</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sharukabdul786" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/sharukabdul_" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/sharuk.abdul_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sharuk-abdul-99b754197/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter name" required>
+                        <input type="email" name="Email" placeholder="Enter email" required>
+                        <textarea rows="6" name="Message" placeholder="Enter message" required></textarea>
+                        <input type="submit" class="btn submit" />
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section starts -->
+
+        <div class="copyright">
+            <p>Created by <a href="https://github.com/sharukabdul" target="_blank">Sharuk Abdul</a> | &copy; 2024 All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Google Sheets Contact form script -->
+      
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby-pQnB_ukTxvYp8_lmWb2K8Y_gPpCyjB6NbBOT_AjX10yFMtETxIHSCJFVG32R82o4Gw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('message');
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        // Text animation------------------
+        var typed = new Typed(".auto-type", {
+            strings: ["Developer", "Freelancer", "Designer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+</body>
+</html>
